@@ -1,9 +1,3 @@
-section h2 {
-    font-size: 3rem;
-    background: #ccc;
-    padding: 2rem;
-}
-
 table {
     width: 100%;
     text-align: center;
@@ -12,7 +6,16 @@ table {
     /* border-spacing: 0; espaço entre as bordas */
 }
 
+thead th {
+    background: #eee;
+    font-size: 1.6rem;
+}
+
 th, td {
     border: 1px solid #ccc;
     padding: 0.7em;
+}
+
+.dados-invalidos {
+    background: lightcoral;
 }

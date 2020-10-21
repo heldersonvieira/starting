@@ -7,15 +7,15 @@
     font-size: 62.5%;
 }
 
-body {
-    font-size: 1.4rem;
-    font-family: "Roboto", sans-serif;
-}
-
 header {
     background: #333;
     color: #ffffff;
     height: 10rem;
+}
+
+body {
+    font-size: 1.4rem;
+    font-family: "Nunito", sans-serif;
 }
 
 #header-container {
@@ -31,4 +31,12 @@ header h1 {
     width: 60%;
     height: 100%;
     margin: 0 auto;
+}
+
+section h2 {
+    font-size: 3rem;
+    background: #ccc;
+    padding: 2rem;
+    margin-top: 4rem;
+    border: 1px solid #ccc;
 }
