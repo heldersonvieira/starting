@@ -79,19 +79,23 @@
             <div class="form-container">
                 <form class="form-paciente">
                     <h2>Dados do paciente</h2>
-
+                    <ul class="erros-form">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
                     <div class="entradas-form ent-nome">
-                        <label for="nome">Nome</label>
+                        <label for="nome">Nome</label><span class="erro erro-nome"></span>
                         <input type="text" name="nome" id="nome">
                     </div>
 
                     <div class="entradas-form ent-peso">
-                        <label for="peso">Peso</label>
+                        <label for="peso">Peso</label><span class="erro erro-nome"></span>
                         <input type="text" name="peso" id="peso">
                     </div>
 
                     <div class="entradas-form ent-altura">
-                        <label for="altura">Altura</label>
+                        <label for="altura">Altura</label><span class="erro erro-nome"></span>
                         <input type="text" name="altura" id="altura">
                     </div>
 

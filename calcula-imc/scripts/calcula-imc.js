@@ -22,7 +22,7 @@ for (var i = 0; i < pacientes.length; i++) {
     }
 
     if (!alturaValida) {
-        imcTd.textContent = 'Altua inválida';
+        imcTd.textContent = 'Altura inválida';
         imcTd.classList.add('dados-invalidos')
     }   
 }
