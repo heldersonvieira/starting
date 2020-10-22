@@ -43,7 +43,7 @@
 }
 
 .bto-form {
-    margin: 1rem 0;
+    margin: 1rem 0 8rem;
 }
 
 .botao {
@@ -65,3 +65,18 @@
 .botao:hover {
     background: #1A70FF;
 }
+
+ul {
+    margin: 2rem 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+.msg-erro {
+    color: red;
+    font: bold 1.6rem 'Nunito', sans-serif;
+    padding: 0.2rem;
+}
+

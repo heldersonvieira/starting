@@ -5,16 +5,19 @@ botaoAdiciona.addEventListener('click', function () {
     var paciente = capturaForm(form);
     var pacienteTr = criaTr(paciente);    
     var erros = validaPaciente(paciente)
+    var elementoUl = document.querySelector('.erros-form');
 
-    /*
     if (erros.length > 0) {
         exibeMensagemErro(erros);
+
+        return;
     }
-    */
+
+    elementoUl.innerHTML = '';
 
     var tabela = document.querySelector('#tabela-pacientes');
     tabela.appendChild(pacienteTr);
-       
+
     form.reset();
 });
 
@@ -56,24 +59,32 @@ function criaTd (classe, valor) {
 
 function exibeMensagemErro (erros) {
     var ul = document.querySelector('.erros-form');
-    for (var i = 0; i < erros.length; i++) {
+    ul.innerHTML = '';
+
+    erros.forEach(erro => {
         var li = document.createElement('li');
+        li.textContent = erro;
+        li.classList.add('msg-erro');
         ul.appendChild(li);
-    }
+    });
 
     return ul;
 }
 
 function validaPaciente (paciente) {
+    var erros = [];
+
     if (paciente.nome.length <= 0) {
-        console.log('Nome inválido');
+        erros.push('Nome inválido');
     }
 
     if (!validaPeso(paciente.peso)) {
-        console.log('Peso inválido');
+        erros.push('Peso inválido');
     }
 
     if (!validaAltura(paciente.altura)) {
-        console.log('Altura inválida');
+        erros.push('Altura inválida');
     }
+
+    return erros;
 }
