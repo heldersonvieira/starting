@@ -1,9 +1,12 @@
 .form-container h2 {
     margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
 }
 
 .form-container {
     width: 100%;
+    font-family: 'Nunito', sans-serif;
 }
 
 .form-container .ent-nome {
@@ -13,6 +16,7 @@
 .entradas-form {
     display: inline-block;
     margin-bottom: 1.5rem;
+    width: 49%;
 }
 
 .entradas-form label {
@@ -22,10 +26,42 @@
     margin-bottom: 0.5rem;
 }
 
+.ent-peso {
+    margin-right: 1.2rem;
+}
+
 .entradas-form input {
+    width: 100%;
     padding: 1.2rem 1.2rem;
+    border: 1px solid #cccccc;
+    border-radius: 0.5rem;
+    box-shadow: 0.1rem 0.2rem 1rem #ccc;
 }
 
 .ent-nome input {
     width: 100%;
+}
+
+.bto-form {
+    margin: 1rem 0;
+}
+
+.botao {
+    padding: 1rem 3rem;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Nunito', sans-serif;
+    
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0.1rem 0.2rem 1rem #1E90FF;
+
+    background: #1E90FF;
+    color: white;
+    cursor: pointer;
+    transition: background-color 200ms;
+}
+
+.botao:hover {
+    background: #1A70FF;
 }

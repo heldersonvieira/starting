@@ -7,7 +7,7 @@ for (var i = 0; i < pacientes.length; i++) {
     var peso = paciente.querySelector('.info-peso').textContent;
     var altura = paciente.querySelector('.info-altura').textContent;
     var imcTd = paciente.querySelector('.info-imc');
-    var imc = calculaIMC(peso, altura);
+    var imc = calculaImc(peso, altura);
 
     var pesoValido = validaPeso(peso);
     var alturaValida = validaAltura(altura);
@@ -28,7 +28,7 @@ for (var i = 0; i < pacientes.length; i++) {
 }
 
 /*  FUNÇÕES */
-function calculaIMC (peso, altura) {
+function calculaImc (peso, altura) {
     var imc = peso / (altura * altura);
     return imc.toFixed(2);
 }

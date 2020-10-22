@@ -13,9 +13,10 @@ header {
     height: 10rem;
 }
 
-body {
+body, section {
     font-size: 1.4rem;
     font-family: "Nunito", sans-serif;
+    background: rgb(255, 255, 245);
 }
 
 #header-container {

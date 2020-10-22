@@ -1,9 +1,13 @@
+.table-container {
+    box-shadow: 0.1rem 0.2rem 1rem #ccc;
+}
+
 table {
     width: 100%;
     text-align: center;
     table-layout: fixed;
     border-collapse: collapse;
-    /* border-spacing: 0; espaço entre as bordas */
+    /* border-spacing: 0; espaço entre as bordas */    
 }
 
 thead th {
