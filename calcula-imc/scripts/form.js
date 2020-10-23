@@ -13,6 +13,7 @@ botaoAdiciona.addEventListener('click', function () {
         return;
     }
 
+    // ELEMENTO PARA LIMPAR OS ERROS QUANDO TODOS OS CAMPOS VALIDOS
     elementoUl.innerHTML = '';
 
     var tabela = document.querySelector('#tabela-pacientes');
@@ -21,6 +22,7 @@ botaoAdiciona.addEventListener('click', function () {
     form.reset();
 });
 
+/*  FUNÇÕES  */
 function capturaForm (form) {
     var paciente = {
         nome: form.nome.value,
@@ -32,6 +34,8 @@ function capturaForm (form) {
     return paciente;
 }
 
+/*  AS DUAS FUNÇÕES ABAIXO CRIA O ELEMENTO TR E O TD, 
+    ASSIM TAMBÉM MONTA O TD COMO ELEMENTO FILHO DO TR   */
 function criaTr (paciente) {
     var tr = document.createElement('tr');
     tr.classList.add('paciente');
@@ -57,6 +61,9 @@ function criaTd (classe, valor) {
     return td;
 }
 
+/*  NAS PRÓXIMAS FUNÇÕES, UMA VALIDA OS CAMPOS, E SE O CAMPO INVÁLIDO INSERE A MSG DE ERRO NO ARRAY,
+    A FUNÇÃO PARA EXIBIR A MENSAGEM, RECEBE A LISTA DE ERROS E DE ACORDO COM O LENGTH DO ARRAY CRIA UM ELEMENTO
+    LI COM O ERRO NO SEU TEXTCONTENT    */
 function exibeMensagemErro (erros) {
     var ul = document.querySelector('.erros-form');
     ul.innerHTML = '';
