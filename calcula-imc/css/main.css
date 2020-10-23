@@ -11,6 +11,22 @@ header {
     background: #333;
     color: #ffffff;
     height: 10rem;
+    margin-bottom: 4rem;
+}
+
+.table-container label {
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 2rem 0 0.5rem 2rem;
+}
+
+.filtra-paciente {
+    margin: 0 2rem 2rem 2rem;
+    width: 40%;
+    padding: 1.2rem 1.2rem;
+    border: 1px solid #cccccc;
+    border-radius: 0.5rem;
 }
 
 body, section {
@@ -38,7 +54,15 @@ section h2 {
     font-size: 3rem;
     background: #ccc;
     padding: 2rem;
-    margin-top: 4rem;
     border: 1px solid #ccc;
 }
 
+.fade-out {
+    color: red;
+    font-weight: bold;
+    transition: 1000ms;
+}
+
+.invisivel {
+    display: none;
+}

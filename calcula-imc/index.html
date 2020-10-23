@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/table.css">
     <link rel="stylesheet" href="./css/form.css">
 
@@ -27,6 +27,9 @@
                 <h2>Pacientes</h2>
 
                 <!-- CRIANDO TABELA -->
+                
+                <label for="filtra">Pesquise o paciente na tabela</label>
+                <input type="text" id="filtra" class="filtra-paciente" placeholder="Digite aqui o nome do paciente">
                 <table>
                     <!-- CABEÇALHO DA TABELA -->
                     <thead>
@@ -110,7 +113,8 @@
 
     <script src="./scripts/calcula-imc.js"></script>
     <script src="./scripts/form.js"></script>
-    <script src="./scripts/excluir-paciente.js"></script>
+    <script src="./scripts/exclui-paciente.js"></script>
+    <script src="./scripts/filtra-paciente.js"></script>
 
 </body>
 
