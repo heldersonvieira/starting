@@ -3,7 +3,7 @@ var botaoAdiciona = document.querySelector('.bto-adicionar');
 botaoAdiciona.addEventListener('click', function () {
     var form = document.querySelector('.form-paciente');
     var paciente = capturaForm(form);
-    var pacienteTr = criaTr(paciente);    
+    //var pacienteTr = criaTr(paciente);    
     var erros = validaPaciente(paciente)
     var elementoUl = document.querySelector('.erros-form');
 
@@ -16,11 +16,19 @@ botaoAdiciona.addEventListener('click', function () {
     // ELEMENTO PARA LIMPAR OS ERROS QUANDO TODOS OS CAMPOS VALIDOS
     elementoUl.innerHTML = '';
 
-    var tabela = document.querySelector('#tabela-pacientes');
-    tabela.appendChild(pacienteTr);
+    //var tabela = document.querySelector('#tabela-pacientes');
+    //tabela.appendChild(pacienteTr);
+    inserePaciente(paciente);
 
     form.reset();
 });
+
+function inserePaciente(paciente) {
+    var pacienteTr = criaTr(paciente);   
+    var tabela = document.querySelector('#tabela-pacientes');
+    tabela.appendChild(pacienteTr);
+    
+}
 
 /*  FUNÇÕES  */
 function capturaForm (form) {
