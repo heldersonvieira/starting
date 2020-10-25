@@ -4,7 +4,7 @@ botaoBuscaPacientes.addEventListener('click', function () {
     console.log('Buscando pacientes');
     var erroBusca = document.querySelector('.msg-erro-busca');
     var requisicao = new XMLHttpRequest();
-    requisicao.open('GET', 'https://api-pacientes.herokuapp.com/pacientesw');
+    requisicao.open('GET', 'https://api-pacientes.herokuapp.com/pacientes');
     
     requisicao.addEventListener('load', function () {
         
