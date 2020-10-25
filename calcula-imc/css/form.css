@@ -42,41 +42,11 @@
     width: 100%;
 }
 
-.bto-form {
-    margin: 1rem 0 8rem;
-}
-
-.botao {
-    padding: 1rem 3rem;
-    font-size: 2rem;
-    font-weight: bold;
-    font-family: 'Nunito', sans-serif;
-    
-    border: none;
-    border-radius: 0.5rem;
-    box-shadow: 0.1rem 0.2rem 1rem #1E90FF;
-
-    background: #1E90FF;
-    color: white;
-    cursor: pointer;
-    transition: background-color 200ms;
-}
-
-.botao:hover {
-    background: #1A70FF;
-}
-
 ul {
     margin: 2rem 0;
 }
 
 li {
     list-style-type: none;
-}
-
-.msg-erro {
-    color: red;
-    font: bold 1.6rem 'Nunito', sans-serif;
-    padding: 0.2rem;
 }
 

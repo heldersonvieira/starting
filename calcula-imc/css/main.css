@@ -10,7 +10,7 @@
 header {
     background: #333;
     color: #ffffff;
-    height: 10rem;
+    height: 9em;
     margin-bottom: 4rem;
 }
 
@@ -65,13 +65,4 @@ section h2 {
 
 .invisivel {
     display: none;
-}
-
-.bto-tabela {
-    margin-top: 2rem;
-}
-
-.msg-erro-busca {
-    margin-left: 2rem;
-    font-size: clamp(1.4rem 1.6rem 1.6rem);
 }

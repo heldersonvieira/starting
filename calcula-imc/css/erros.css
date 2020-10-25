@@ -1,0 +1,14 @@
+.dados-invalidos {
+    background: lightcoral;
+}
+
+.msg-erro {
+    color: red;
+    font: bold 1.6rem 'Nunito', sans-serif;
+    padding: 0.2rem;
+}
+
+.msg-erro-busca {
+    margin-left: 2rem;
+    font-size: clamp(1.4rem, 1.6rem, 1.8rem);
+}

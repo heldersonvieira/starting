@@ -13,14 +13,10 @@ table {
 
 thead th {
     background: #eee;
-    font-size: 2rem;
 }
 
 th, td {
     border: 1px solid #ccc;
     padding: 0.7em;
-}
-
-.dados-invalidos {
-    background: lightcoral;
+    font-size: clamp(1rem, 1.4rem, 1.6rem);
 }
