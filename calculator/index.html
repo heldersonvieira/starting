@@ -1,52 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/main.css">
-    <title>Calculadora</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Document</title>
 </head>
+
 <body>
     <header>
         <div class="header-container">
-            <h1>Calculadora Habe</h1>
+            <h1>Calculadora Simples</h1>
         </div>
     </header>
 
-    <main>
+    <form name="calcform" class="calc-form">
         <div class="container">
-            <div class="calculator-div">
-                <table>
-                    <tr>
-                        <td>7</td>
-                        <td>8</td>
-                        <td>9</td>
-                        <td>/</td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>5</td>
-                        <td>6</td>
-                        <td>*</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>2</td>
-                        <td>3</td>
-                        <td>-</td>
-                    </tr>
-                    <tr>
-                        <td>.</td>
-                        <td>0</td>
-                        <td>=</td>
-                        <td>+</td>
-                    </tr>
 
-                </table>
+            <label class="result-label" for="result">Resultado</label>
+            <input type="text" id="result" class="result">
+
+            <div class="default-inputs">
+                <input type="text" name="input1" class="input" id="input1" placeholder="insira um número">
+                <span class="show-operator">+</span>
+                <input type="text" name="input2" class="input" id="input2" placeholder="insira um número">
             </div>
+
+            <div class="operations">
+                <h2>Calcula números</h2>
+                <p>Insira os números e escolha a operação</p>
+
+                <div class="operators">
+                    <label for="sum">
+                        <input id="sum" type="radio" name="interest" class="operator" checked>
+                        Soma
+                    </label>
+                    <label for="subtraction">
+                        <input id="subtraction" type="radio" name="interest" class="operator">
+                        Subtração
+                    </label>
+                    <label for="multiplication">
+                        <input id="multiplication" type="radio" name="interest" class="operator">
+                        Multiplicação
+                    </label>
+                    <label for="division">
+                        <input id="division" type="radio" name="interest" class="operator">
+                        Divisão
+                    </label>
+                </div>
+
+                <button class="button-calc">Calcular</button>
+            </div>
+
         </div>
-    </main>
-    
+    </form>
+
+    <script src="./scripts/calcula.js"></script>
+
 </body>
+
 </html>
