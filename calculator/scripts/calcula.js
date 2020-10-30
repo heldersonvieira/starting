@@ -1,4 +1,4 @@
-var button = document.querySelector('.button-calc');
+var button = document.querySelector('#button-calc');
 var operators = document.querySelectorAll('.operator');
 
 button.addEventListener('click', function(event) {
@@ -8,10 +8,9 @@ button.addEventListener('click', function(event) {
     var showResult = document.querySelector('.result');
     var result = calcNum(firstNumber, secondNumber, operators);
     
-    showOperator(operators);
-    showResult.value = result;    
+    //showOperator(operators);
 
-    console.log(firstNumber);
+    showResult.value = result;
 });
 
 
