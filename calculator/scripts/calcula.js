@@ -1,37 +1,42 @@
 var button = document.querySelector('#button-calc');
-var operators = document.querySelectorAll('.operator');
+var clear = document.querySelector('#button-clear');
+var operators = document.querySelectorAll('.operator')
+
+updateOperator(operators);
+
+clear.addEventListener('click', function () {
+    var form = document.querySelector('form');
+    
+    form.reset();
+})
 
 button.addEventListener('click', function(event) {
-    event.preventDefault();
     var firstNumber = parseFloat(document.querySelector('#input1').value);
     var secondNumber = parseFloat(document.querySelector('#input2').value);
     var showResult = document.querySelector('.result');
     var result = calcNum(firstNumber, secondNumber, operators);
-    
-    //showOperator(operators);
-
+    event.preventDefault();
     showResult.value = result;
 });
 
+var show = document.querySelector('.show-operator');
 
-function showOperator(operators) {
-    var show = document.querySelector('.show-operator');
-    operators.forEach(operator => {
-        if (operator.checked == true) {
-            
-            if (operator.id == 'sum') {
-                show.textContent = '+';
-            } else if (operator.id == 'subtraction') {
-                show.textContent = '-';
-            } else if (operator.id == 'multiplication') {
-                show.textContent = '*';
-            } else if (operator.id == 'division') {
-                show.textContent = '/';
-            }
-        }
-    })
-    
-    return show.textContent;
+function updateOperator(operators) {
+    for (var i = 0; i < operators.length; i++) {
+        var operator = operators[i];
+            operator.addEventListener('click', function (event) {
+                var idOperator = event.target.id;
+                if (idOperator == 'sum') {
+                    show.innerHTML = '+';
+                } else if (idOperator == 'subtraction') {
+                    show.innerHTML = '-';
+                } else if (idOperator == 'multiplication') {
+                    show.innerHTML = 'X';
+                } else if (idOperator == 'division') {
+                    show.innerHTML = '/';
+                }
+            })
+    }
 }
 
 function calcNum(num1, num2, operators) {
@@ -50,6 +55,11 @@ function calcNum(num1, num2, operators) {
         }
     });
 
+    if (typeof result == NaN) {
+        result = 'Inválido';
+    }
+
+    console.log( typeof result);
     return result;
 }
 
