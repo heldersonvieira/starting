@@ -1,16 +1,38 @@
-var button = document.querySelector('table');
+var display = document.calculator.displayNumber;
+var number1 = 0;
+var number2 = 0;
+var pendingOpe = '';
+var buttons = document.querySelector('table');
 
-button.addEventListener('click', function(event) {
-    var valueCaptured = capture(event);
-    displayValue(valueCaptured);
-});
+buttons.addEventListener('click', function(event) {
+    if (event.target.type == 'button') {
+        
+    }
+})
 
-function capture(event) {
 
-    return event.target.textContent;
+// FUNÇÃO PARA MOSTRAR NO DISPLAY OS VALORES CAPTURADOS
+function showValue(num) {
+    var displayNumber = document.calculator.displayNumber;
+   
+    return displayNumber.value = displayNumber.value + value;
 }
 
-function displayValue(value) {
 
-    return document.querySelector('.show-numbers').value = value;    
+function receivesNumber(num) {
+
+    if (display.value == '') {
+        display.value = num;
+    } else if (display.value != '' && display.value != 'undefined') {
+        display.value += num;
+    }   
+}
+
+function operation(ope) {
+    var result = document.calculator.displayResult;
+    if (ope == '+') {
+        
+        
+    }
+        
 }
