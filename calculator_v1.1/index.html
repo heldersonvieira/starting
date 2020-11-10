@@ -17,7 +17,7 @@
     </header>
 
     <form name="calculator" class="calc">
-        <table class="calc-table">
+        <table name="calcForm" class="calc-table">
             <tr class="display">
                 <td colspan="4"><input type="text" name="displayNumber" class="display-number"></td>
             </tr>
@@ -26,34 +26,34 @@
             </tr>
         
             <tr>
-                <td><input type="button" name="clear" class="button clear" value="AC"></input></td>
-                <td><input type="button" name="back" class="button default" value="←"></input></td>
-                <td><input type="button" name="percent" class="button pattern" value="%"></input></td>
-                <td><input type="button" name="divide" class="button operator" value="/"></input></td>
+                <td><input type="button" class="button clear" value="AC" onclick="clearCalc()"></input></td>
+                <td><input type="button" class="button default" value="←"></input></td>
+                <td><input type="button" class="button pattern" value="%"></input></td>
+                <td><input type="button" class="button operator" value="/" onclick="receivesOperator('/')"></input></td>
             </tr>
             <tr>
-                <td><input type="button" name="seven" class="button pattern" value="7" onclick="receivesNumber(7)"></input>
+                <td><input type="button" class="button pattern" value="7" onclick="receivesNumber(7)"></input>
                 </td>
-                <td><input type="button" name="eight" class="button pattern" value="8" onclick="receivesNumber(8)"></input></td>
-                <td><input type="button" name="nine" class="button pattern" value="9" onclick="receivesNumber(9)"></input></td>
-                <td><input type="button" name="multiply" class="button operator" value="x"></input></td>
+                <td><input type="button" class="button pattern" value="8" onclick="receivesNumber(8)"></input></td>
+                <td><input type="button" class="button pattern" value="9" onclick="receivesNumber(9)"></input></td>
+                <td><input type="button" class="button operator" value="x" onclick="receivesOperator('x')"></input></td>
             </tr>
             <tr>
-                <td><input type="button" name="four" class="button pattern" value="4" onclick="receivesNumber(4)"></input></td>
-                <td><input type="button" name="five" class="button pattern" value="5" onclick="receivesNumber(5)"></input></td>
-                <td><input type="button" name="six" class="button pattern" value="6" onclick="receivesNumber(6)"></input></td>
-                <td><input type="button" name="subtract" class="button operator" value="-"></input></td>
+                <td><input type="button" class="button pattern" value="4" onclick="receivesNumber(4)"></input></td>
+                <td><input type="button" class="button pattern" value="5" onclick="receivesNumber(5)"></input></td>
+                <td><input type="button" class="button pattern" value="6" onclick="receivesNumber(6)"></input></td>
+                <td><input type="button" class="button operator" value="-" onclick="receivesOperator('-')"></input></td>
             </tr>
             <tr>
-                <td><input type="button" name="one" class="button pattern" value="1" onclick="receivesNumber(1)"></input></td>
-                <td><input type="button" name="two" class="button pattern" value="2" onclick="receivesNumber(2)"></input></td>
-                <td><input type="button" name="three" class="button pattern" value="3" onclick="receivesNumber(3)"></input></td>
-                <td><input type="button" name="sum" class="button operator" value="+"></input></td>
+                <td><input type="button" class="button pattern" value="1" onclick="receivesNumber(1)"></input></td>
+                <td><input type="button" class="button pattern" value="2" onclick="receivesNumber(2)"></input></td>
+                <td><input type="button" class="button pattern" value="3" onclick="receivesNumber(3)"></input></td>
+                <td><input type="button" class="button operator" value="+" onclick="receivesOperator('+')"></input></td>
             </tr>
             <tr>
-                <td colspan="2"><input type="button" class="button pattern" value="0"></input></td>
-                <td><input type="button" class="button pattern" value="."></input></td>
-                <td><input type="button" name="igual" class="button operator" value="="></input></td>
+                <td colspan="2"><input type="button" class="button pattern" value="0" onclick="receivesNumber(0)"></input></td>
+                <td><input type="button" class="button pattern" value="." onclick="receivesNumber('.')"></input></td>
+                <td><input type="button" class="button operator" value="="></input></td>
             </tr>
         
         </table>
