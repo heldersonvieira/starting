@@ -50,7 +50,27 @@ main {
     text-align: center;
 }
 
+.display {
+    width: 100%;
+    height: 6rem;
+}
 
+.display-number, .display-result {
+    width: 100%;
+    height: 100%;
+    text-align: right;
+    padding: 0 2rem;
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: 'Ubuntu';    
+    border: none;
+    color: rgb(255, 255, 240);
+    background: #4c4c4c;
+}
+
+tbody td {
+    width: 25%;
+}
 
 .button {
     border: none;
@@ -58,14 +78,30 @@ main {
     height: 100%;
     cursor: pointer;
     font-size: 2.5rem;
-    font-weight: bold;
     color: white;
+    font-family: 'Ubuntu';
 }
 
 .pattern {
-    background: #cccccc;
+    background: #dddddd;
     color: #4c4c4c;
+    transition: background 200ms;
 }
+
+.pattern:hover {
+    background: #eeeeee;
+}
+
+.pattern:active {
+    color: #808080;
+    font-family: 'Ubuntu';
+}
+
 .operator {
     background: #ef913c;
+    transition: 200ms;
+}
+
+.operator:hover {
+    background: #fab477;
 }
