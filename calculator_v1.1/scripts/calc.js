@@ -1,17 +1,20 @@
 var display = document.calculator.displayNumber;
+var result = document.calculator.displayResult;
 var number1 = 0;
 var number2 = 0;
 var pendingOpe = true;
+var operator = '';
+
 
 function clearCalc() {
     display.value = '';
+    result.value = '';
     number1 = 0; 
     number2 = 0;
     pendingOpe = true;
 }
 
-function calcResult(operator) {
-    var result = document.calculator.displayResult;
+function calcResult() {
     if (operator = '+') {
         result.value = parseFloat(number1) + parseFloat(number2);
     } else if (operator = '-') {
@@ -33,10 +36,10 @@ function receivesNumber(num) {
         display.value += num;
         number2 = display.value;
     }
-    console.log(number1, number2);
 }
 
 function receivesOperator(ope) {
+    operator = ope;
     display.value = '';
-    pendingOpe = false;
+    pendingOpe = false;   
 }

@@ -7,8 +7,65 @@
     font-size: 62.5%;
 }
 
-body {
+body, html {
     width: 100%;
     height: 100vh;
     background: rgb(255, 255, 240);
+    font-family: 'Ubuntu';
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 10rem;
+    background: #020628;
+    color: #72ebc0;
+    font-size: clamp(1rem, 4vh, 5rem);
+}
+
+main {
+    width: 100%;
+    height: 85.8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+}
+
+.calc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 60%;
+    padding-bottom: 1px;
+    background: #4c4c4c;
+}
+
+.calc-table {
+    width: 100%;
+    height: 100%;
+    border-collapse: separate;
+    text-align: center;
+}
+
+
+
+.button {
+    border: none;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.pattern {
+    background: #cccccc;
+    color: #4c4c4c;
+}
+.operator {
+    background: #ef913c;
 }
