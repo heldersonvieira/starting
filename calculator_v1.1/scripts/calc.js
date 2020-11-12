@@ -15,17 +15,19 @@ function clearCalc() {
 }
 
 function calcResult() {
-    if (operator = '+') {
+    if (operator == '+') {
         result.value = parseFloat(number1) + parseFloat(number2);
-    } else if (operator = '-') {
+    } else if (operator == '-') {
         result.value = parseFloat(number1) - parseFloat(number2);
-    } else if (operator = '/') {
+    } else if (operator == '/') {
         result.value = parseFloat(number1) / parseFloat(number2);
-    } else if (operator = '*') {
+    } else if (operator == '*') {
         result.value = parseFloat(number1) * parseFloat(number2);
     } else {
         result.value = 'Operação inválida'
     }
+
+    console.log(number1, number2);
 }
 
 function receivesNumber(num) {
@@ -39,7 +41,7 @@ function receivesNumber(num) {
 }
 
 function receivesOperator(ope) {
-    operator = ope;
     display.value = '';
+    operator = ope; // operator recebe ope para ser usado no calculo da função calcResult
     pendingOpe = false;   
 }

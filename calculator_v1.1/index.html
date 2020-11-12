@@ -23,24 +23,24 @@
                 <tbody>
                     <div class="displays">
                         <tr class="display">
-                            <td colspan="4"><input type="text" name="displayNumber" class="display-number"></td>
+                            <td colspan="4"><input type="button" name="displayNumber" class="display-number"></td>
                         </tr>
                         <tr class="display">
-                            <td colspan="4"><input type="text" name="displayResult" class="display-result"></td>
+                            <td colspan="4"><input type="button" name="displayResult" class="display-result"></td>
                         </tr>
                     </div>
                 
                     <tr>
                         <td><input class="button pattern" type="button" value="AC" onclick="clearCalc()"></input></td>
                         <td><input class="button pattern" type="button" value="←"></input></td>
-                        <td><input class="button pattern" type="button" value="%"></input></td>
+                        <td><input class="button pattern" type="button" value="%" onclick="receivesOperator('%')"></input></td>
                         <td><input class="button operator" type="button" value="/" onclick="receivesOperator('/')"></input></td>
                     </tr>
                     <tr>
                         <td><input class="button pattern" type="button" value="7" onclick="receivesNumber(7)"></input></td>
                         <td><input class="button pattern" type="button" value="8" onclick="receivesNumber(8)"></input></td>
                         <td><input class="button pattern" type="button" value="9" onclick="receivesNumber(9)"></input></td>
-                        <td><input class="button operator" type="button" value="x" onclick="receivesOperator('x')"></input></td>
+                        <td><input class="button operator" type="button" value="x" onclick="receivesOperator('*')"></input></td>
                     </tr>
                     <tr>
                         <td><input class="button pattern" type="button" value="4" onclick="receivesNumber(4)"></input></td>
