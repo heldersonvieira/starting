@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronometer</title>
+
+    <link rel="stylesheet" href="./index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1>Cronometro Simples</h1>
+    </header>
+
+    <main>
+        <div class="box-cronometer">
+
+            <h2></h2>
+
+            <div class="clock">
+                <div class="box box-hours">
+                    <p class="hours">0</p>
+                </div>
+                :
+                <div class="box box-minutes">
+                    <p class="minutes">0</p>
+                </div>
+                :
+                <div class="box box-seconds">
+                    <p class="seconds">0</p>
+                </div>
+                :
+                <div class="box box-milliseconds">
+                    <p class="milliseconds">0</p>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <button class="start button" onclick="startCronometer()">Iniciar</button>
+                <button class="pause button" onclick="pauseCronometer()">Parar</button>
+                <button class="stop button" onclick="stopCronometer()">Zerar</button>
+            </div>
+
+            <section class="results">
+                <div>
+                    <span></span>
+                </div>
+                <div>
+                    <span></span>
+                </div>
+                <div>
+                    <span></span>
+                </div>
+            </section>
+        </div>
+
+    </main>
+
+    <script src="./crono.js"></script>
+    
+</body>
+</html>

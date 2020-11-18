@@ -1,0 +1,145 @@
+@font-face {
+    font-family: 'Digital';
+    src: url('./public/font/DJB\ Get\ Digital.ttf');
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body, html, main {
+    width: 100%;
+    height: 88.7vh;
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 8rem;
+    background: #fdfcdc;
+
+    font-size: 2.4rem;
+    color: #293241;
+    text-align: center;
+    padding: 1.1rem;
+}
+
+div.box-cronometer {
+    width: 100%;
+    height: 100%;
+    background: #293241;
+    display: block;
+    padding: 10rem 0;
+}
+
+div.clock {
+    width: 50%;
+    height: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5rem;
+    font-size: 11rem;
+    font-family: 'Digital', sans-serif;
+    color: #fdfcdc;
+    border: 1px dashed #fdfcdc;
+    margin: auto;
+}
+
+div.box-milliseconds {
+    font-size: 5rem;
+    padding-top: 3rem;
+}
+
+div.box {
+    width: 25%;
+    text-align: center;
+    
+}
+
+div.buttons {
+    width: 40%;
+    height: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+}
+
+div.buttons .button {
+    width: 30%;
+    height: 6rem;
+    font-size: 3rem;
+    font-family: 'Roboto', sans-serif;
+    border: none;
+}
+
+div.buttons .button:focus {
+    outline: none;
+}
+
+button.start {
+    cursor: pointer;
+    background: #55a630;
+    color: #edf6f9;
+    transition: background 150ms;
+}
+
+button.start:hover {
+    background: #2b9348;
+}
+
+button.pause {
+    cursor: pointer;
+    background: #ff9500;
+    color: #edf6f9;
+    transition: background 2ms;
+}
+
+button.pause:hover {
+    background: #ff8800;
+}
+
+button.stop {
+    cursor: pointer;
+    background: #ef233c;
+    color: #edf6f9;
+    transition: background 2ms;
+}
+
+button.stop:hover {
+    background: #d80032;
+}
+
+section.results {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    width: 50%;
+    height: 6rem;
+    margin: auto;
+}
+
+section.results .panel {
+    display: inline-block;
+    width: 15rem;
+    height: 5rem;
+    border: 1px solid #fdfcdc;
+    border-style: dashed;
+    font-size: 2.2rem;
+    font-family: 'Digital', sans-serif;
+    color: #fdfcdc;
+    margin: 0 1.5rem 0 0;
+    text-align: center;
+    padding: 1rem;
+}
+
+.invisible {
+    display: none;
+}
