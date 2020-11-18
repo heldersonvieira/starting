@@ -3,12 +3,9 @@ var countMilliseconds = 0;
 var countSeconds = 0;
 var countMinutes = 0;
 var countHours = 0;
-
-
 var count;
 
-function cronometer() {
-    
+function cronometer() {   
     if (countMilliseconds < 99) {
         countMilliseconds++;
     } else {
@@ -66,6 +63,7 @@ function deletePanel() {
     var panels = document.querySelectorAll('.panel');
 
     panels.forEach(panel => {
+        panel.classList.remove('panel');
         panel.classList.add('invisible');
     })
 }
